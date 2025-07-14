@@ -2043,7 +2043,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: f3e842e6cb5a825b6918a74a38402ba1409411f8
   ReactCodegen: 6cb6e0d0b52471abc883541c76589d1c367c64c7
   ReactCommon: 1ab5451fc5da87c4cc4c3046e19a8054624ca763
-  RNiOSOggDecoder: 386fd552d0fbb542eb825c4bd03208a5a60e49b4
+  RNiOSOggDecoder: 3380d9ab4cf4018372bb0b84bf4bc2cd55d33d9c
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: adb397651e1c00672c12e9495babca70777e411e
 

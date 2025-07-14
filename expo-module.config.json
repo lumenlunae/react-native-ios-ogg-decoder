@@ -1,9 +1,6 @@
 {
-  "platforms": ["apple", "android", "web"],
+  "platforms": ["apple"],
   "apple": {
     "modules": ["RNiOSOggDecoderModule"]
-  },
-  "android": {
-    "modules": ["expo.modules.iosoggdecoder.RNiOSOggDecoderModule"]
   }
 }

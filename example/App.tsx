@@ -1,37 +1,21 @@
-import { useEvent } from 'expo';
-import RNiOSOggDecoder, { RNiOSOggDecoderView } from 'react-native-ios-ogg-decoder';
-import { Button, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import { decodeOgg } from "react-native-ios-ogg-decoder";
+import { SafeAreaView, ScrollView, Text, View } from "react-native";
+import { useEffect, useState } from "react";
 
 export default function App() {
-  const onChangePayload = useEvent(RNiOSOggDecoder, 'onChange');
+  const [decodedResult, setDecodedResult] = useState<string | undefined>();
+  useEffect(() => {
+    decodeOgg("https://filesamples.com/samples/audio/ogg/sample4.ogg").then(
+      setDecodedResult
+    );
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.container}>
         <Text style={styles.header}>Module API Example</Text>
-        <Group name="Constants">
-          <Text>{RNiOSOggDecoder.PI}</Text>
-        </Group>
         <Group name="Functions">
-          <Text>{RNiOSOggDecoder.hello()}</Text>
-        </Group>
-        <Group name="Async functions">
-          <Button
-            title="Set value"
-            onPress={async () => {
-              await RNiOSOggDecoder.setValueAsync('Hello from JS!');
-            }}
-          />
-        </Group>
-        <Group name="Events">
-          <Text>{onChangePayload?.value}</Text>
-        </Group>
-        <Group name="Views">
-          <RNiOSOggDecoderView
-            url="https://www.example.com"
-            onLoad={({ nativeEvent: { url } }) => console.log(`Loaded: ${url}`)}
-            style={styles.view}
-          />
+          <Text>{decodedResult}</Text>
         </Group>
       </ScrollView>
     </SafeAreaView>
@@ -58,16 +42,12 @@ const styles = {
   },
   group: {
     margin: 20,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 10,
     padding: 20,
   },
   container: {
     flex: 1,
-    backgroundColor: '#eee',
-  },
-  view: {
-    flex: 1,
-    height: 200,
+    backgroundColor: "#eee",
   },
 };

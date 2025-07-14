@@ -20,10 +20,14 @@ Pod::Spec.new do |s|
 
   s.dependency 'ExpoModulesCore'
 
+  s.vendored_frameworks = 'Frameworks/ogg.xcframework', 'Frameworks/vorbis.xcframework'
   # Swift/Objective-C compatibility
+  s.compiler_flags = '-x objective-c++ -std=c++11'
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
   }
-
-  s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
+  
+  s.source_files = "src/**/*.{h,m,mm,swift,hpp,c,cpp}"
+  s.private_header_files = "src/OggDecoderObjC/**/*.h"
+  s.public_header_files = "src/OggDecoder.h"
 end

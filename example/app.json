@@ -16,14 +16,6 @@
       "supportsTablet": true,
       "bundleIdentifier": "expo.modules.iosoggdecoder.example"
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "expo.modules.iosoggdecoder.example"
-    },
     "web": {
       "favicon": "./assets/favicon.png"
     }

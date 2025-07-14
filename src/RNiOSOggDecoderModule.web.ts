@@ -1,15 +1,12 @@
-import { registerWebModule, NativeModule } from 'expo';
+import { registerWebModule, NativeModule } from "expo";
 
-import { RNiOSOggDecoderModuleEvents } from './RNiOSOggDecoder.types';
-
-class RNiOSOggDecoderModule extends NativeModule<RNiOSOggDecoderModuleEvents> {
-  PI = Math.PI;
-  async setValueAsync(value: string): Promise<void> {
-    this.emit('onChange', { value });
-  }
-  hello() {
-    return 'Hello world! 👋';
+class RNiOSOggDecoderModule extends NativeModule {
+  decode(sourcePath: string, destPath: string): Promise<string | undefined> {
+    return Promise.resolve(undefined);
   }
 }
 
-export default registerWebModule(RNiOSOggDecoderModule, 'RNiOSOggDecoderModule');
+export default registerWebModule(
+  RNiOSOggDecoderModule,
+  "RNiOSOggDecoderModule"
+);
