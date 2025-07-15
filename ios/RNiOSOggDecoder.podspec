@@ -16,11 +16,9 @@ Pod::Spec.new do |s|
   }
   s.swift_version  = '5.4'
   s.source         = { git: 'https://github.com/lumenlunae/react-native-ios-ogg-decoder' }
-  s.static_framework = true
-
   s.dependency 'ExpoModulesCore'
-
   s.vendored_frameworks = 'Frameworks/ogg.xcframework', 'Frameworks/vorbis.xcframework'
+
   # Swift/Objective-C compatibility
   s.compiler_flags = '-x objective-c++ -std=c++11'
   s.pod_target_xcconfig = {
