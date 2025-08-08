@@ -8,7 +8,7 @@ PODS:
   - hermes-engine (0.80.2):
     - hermes-engine/Pre-built (= 0.80.2)
   - hermes-engine/Pre-built (0.80.2)
-  - IosOggDecoder (0.1.0):
+  - IosOggDecoder (1.0.0):
     - boost
     - DoubleConversion
     - fast_float
@@ -70,7 +70,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - NitroModules (0.27.3):
+  - NitroModules (0.27.4):
     - boost
     - DoubleConversion
     - fast_float
@@ -2461,9 +2461,9 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: bbc1152da7d2d40f9e59c28acc6576fcf5d28e2a
-  IosOggDecoder: 09c5eafd662eaf80ab650a0519813c7e0bb55c9f
+  IosOggDecoder: dc912e7253315e1101d6b13ec5b8582e3310f0ae
   NitroFS: ad3449f2e340b74c50732c19a17c4b6119e2b325
-  NitroModules: c032eba635e687d0a7184fa0acedb5aad2a427cf
+  NitroModules: 10c0f4265c08608ca7bc0bf7b12de60075ef3969
   RCT-Folly: 846fda9475e61ec7bcbf8a3fe81edfcaeb090669
   RCTDeprecation: 300c5eb91114d4339b0bb39505d0f4824d7299b7
   RCTRequired: e0446b01093475b7082fbeee5d1ef4ad1fe20ac4
