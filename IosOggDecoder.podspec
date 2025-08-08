@@ -22,6 +22,16 @@ Pod::Spec.new do |s|
     "cpp/**/*.{hpp,cpp,h}",
   ]
 
+  # Wasn't able to get a build on my main app working without these xcconfig flags
+  # https://github.com/mrousavy/nitro/issues/591
+  s.pod_target_xcconfig = {
+    "HEADER_SEARCH_PATHS" => [
+      "${PODS_ROOT}/RCT-Folly",
+    ],
+    "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) FOLLY_NO_CONFIG FOLLY_CFG_NO_COROUTINES",
+    "OTHER_CPLUSPLUSFLAGS" => "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1",
+  }
+  
   load 'nitrogen/generated/ios/IosOggDecoder+autolinking.rb'
   add_nitrogen_files(s)
 
