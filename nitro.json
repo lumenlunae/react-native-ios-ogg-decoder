@@ -1,0 +1,23 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": [
+    "iosoggdecoder"
+  ],
+  "ios": {
+    "iosModuleName": "IosOggDecoder"
+  },
+  "android": {
+    "androidNamespace": [
+      "iosoggdecoder"
+    ],
+    "androidCxxLibName": "IosOggDecoder"
+  },
+  "autolinking": {
+    "IosOggDecoder": {
+      "cpp": "HybridIosOggDecoder"
+    }
+  },
+  "ignorePaths": [
+    "**/node_modules"
+  ]
+}
