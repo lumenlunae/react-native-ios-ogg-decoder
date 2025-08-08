@@ -11,13 +11,10 @@ react-native-ios-ogg-decoder is a react native package built with Nitro to decod
 - React Native v0.76.0 or higher
 - Node 18.0.0 or higher
 
-> [!IMPORTANT]  
-> To Support `Nitro Views` you need to install React Native version v0.78.0 or higher.
-
 ## Installation
 
 ```bash
-npm install react-native-ios-ogg-decoder react-native-nitro-modules
+npm install react-native-ios-ogg-decoder react-native-nitro-modules react-native-nitro-fs
 ```
 
 ## Credits

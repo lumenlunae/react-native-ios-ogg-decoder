@@ -43,11 +43,11 @@
   "workspaces": [
     "example"
   ],
-  "repository": "https://github.com/matt/react-native-ios-ogg-decoder.git",
+  "repository": "https://github.com/lumenlunae/react-native-ios-ogg-decoder.git",
   "author": "Matt",
   "license": "MIT",
-  "bugs": "https://github.com/matt/react-native-ios-ogg-decoder/issues",
-  "homepage": "https://github.com/matt/react-native-ios-ogg-decoder#readme",
+  "bugs": "https://github.com/lumenlunae/react-native-ios-ogg-decoder/issues",
+  "homepage": "https://github.com/lumenlunae/react-native-ios-ogg-decoder#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -58,19 +58,20 @@
     "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.5.12",
     "@types/react": "19.1.0",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
     "nitro-codegen": "^0.27.2",
     "react": "19.1.0",
     "react-native": "0.80.2",
     "react-native-builder-bob": "^0.37.0",
     "react-native-nitro-modules": "^0.27.2",
-    "conventional-changelog-conventionalcommits": "^9.1.0",
     "semantic-release": "^24.2.6",
     "typescript": "5.0.4"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-nitro-modules": "*"
+    "react-native-nitro-modules": "*",
+    "react-native-nitro-fs": "*"
   },
   "eslintConfig": {
     "root": true,
