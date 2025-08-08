@@ -38,7 +38,8 @@
     "ios/**/*.swift",
     "app.plugin.js",
     "*.podspec",
-    "README.md"
+    "README.md",
+    "frameworks"
   ],
   "workspaces": [
     "example"
