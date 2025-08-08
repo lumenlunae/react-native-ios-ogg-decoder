@@ -17,6 +17,13 @@ react-native-ios-ogg-decoder is a react native package built with Nitro to decod
 npm install react-native-ios-ogg-decoder react-native-nitro-modules react-native-nitro-fs
 ```
 
+## Example
+
+```typescript
+import { decodeOgg } from 'react-native-ios-ogg-decoder';
+
+const localWavPath = await decodeOgg('https://filesamples.com/samples/audio/ogg/sample4.ogg');
+```
 ## Credits
 
 Bootstrapped with [create-nitro-module](https://github.com/patrickkabwe/create-nitro-module).
