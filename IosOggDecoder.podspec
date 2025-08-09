@@ -26,6 +26,10 @@ Pod::Spec.new do |s|
     exclude_source_file_name = [
       'ios/ogg.xcframework/ios-arm64_x86_64-simulator/ogg.framework/Headers/*.h ios/ogg.xcframework/ios-arm64/ogg.framework/Headers/*.h ios/ogg.xcframework/ios-arm64_x86_64-maccatalyst/ogg.framework/Versions/A/Headers/*.h ios/ogg.xcframework/mac-arm64_x86_64/ogg.framework/Versions/A/Headers/*.h ios/vorbis.xcframework/ios-arm64_x86_64-simulator/vorbis.framework/Headers/*.h ios/vorbis.xcframework/ios-arm64/vorbis.framework/Headers/*.h ios/vorbis.xcframework/ios-arm64_x86_64-maccatalyst/vorbis.framework/Versions/A/Headers/*.h ios/vorbis.xcframework/mac-arm64_x86_64/vorbis.framework/Versions/A/Headers/*.h'
     ]
+
+
+    # Wasn't able to get a build on my main app working without these xcconfig flags
+    # https://github.com/mrousavy/nitro/issues/591
     s.pod_target_xcconfig = {
       "HEADER_SEARCH_PATHS" => [
         "${PODS_ROOT}/RCT-Folly",
@@ -43,10 +47,7 @@ Pod::Spec.new do |s|
       "OTHER_CPLUSPLUSFLAGS" => "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1",
     }
   end
-  # Wasn't able to get a build on my main app working without these xcconfig flags
-  # https://github.com/mrousavy/nitro/issues/591
-  
-  
+
   load 'nitrogen/generated/ios/IosOggDecoder+autolinking.rb'
   add_nitrogen_files(s)
 
