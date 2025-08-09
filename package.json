@@ -1,6 +1,6 @@
 {
   "name": "react-native-ios-ogg-decoder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-native-ios-ogg-decoder is a react native package built with Nitro to decode Ogg files for iOS",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",

@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/lumenlunae/react-native-ios-ogg-decoder/compare/v1.0.2...v1.0.3) (2025-08-09)
+
+### 🐛 Bug Fixes
+
+* **build:** Bump release? ([2275055](https://github.com/lumenlunae/react-native-ios-ogg-decoder/commit/2275055a9e462f869071b81858730197765c8b8e))
+
 ## [1.0.2](https://github.com/lumenlunae/react-native-ios-ogg-decoder/compare/v1.0.1...v1.0.2) (2025-08-09)
 
 ### 🐛 Bug Fixes
