@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/lumenlunae/react-native-ios-ogg-decoder/compare/v1.0.1...v1.0.2) (2025-08-09)
+
+### 🐛 Bug Fixes
+
+* **build:** Remove android and ios old architecture ([5df4be5](https://github.com/lumenlunae/react-native-ios-ogg-decoder/commit/5df4be5eac76330d18c0a095ba9445b984a18c00))
+
 ## [1.0.1](https://github.com/lumenlunae/react-native-ios-ogg-decoder/compare/v1.0.0...v1.0.1) (2025-08-08)
 
 ### 🐛 Bug Fixes
